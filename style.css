@@ -451,7 +451,7 @@ h4 {
 
 .project {
   background-color: #f9f9f9;
-  padding: 15rem 0;
+  padding: 5rem 0;
 }
 
 /* @media (max-width: 1020px) {
@@ -461,33 +461,50 @@ h4 {
 } */
 
 .slider-container {
-  position: relative;
+  /* position: relative;
   max-width: 600px;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto; */
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 5px 2px #0000004d;
+  /* border-radius: 8px;
+  box-shadow: 0 0 5px 2px #0000004d; */
 }
 
 @media (max-width: 700px) {
   .slider-container {
-    max-width: 350px;
+    /* max-width: 350px;
     max-height: auto;
+  } */
+    padding: 0;
   }
 }
 
 @media (max-width: 450px) {
   .slider-container {
-    max-width: 250px;
-    max-height: auto;
+    /* max-width: 250px;
+    max-height: auto; */
+    padding: 0;
   }
 }
 
 .image-container {
-  display: flex;
+  /* display: flex;
   transition: transform 0.4s ease-in-out;
-  width: 100%;
+  width: 100%; */
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 70rem;
+  justify-items: stretch;
+}
+
+@keyframes scroll {
+  to {
+    translate: calc(-8 * 70rem);
+  }
+}
+
+.image-container {
+  animation: scroll 40s linear infinite;
 }
 
 /* .image-container img {
@@ -500,6 +517,7 @@ h4 {
   flex-shrink: 0; /* Mencegah gambar menyusut lebih kecil dari container */
   height: auto;
   border: none;
+  padding: 0;
 }
 
 .slider-container button {
