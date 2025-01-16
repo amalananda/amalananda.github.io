@@ -1,247 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./porticon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /> -->
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&amp;display=swap" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link href="/style.css" rel="stylesheet" />
-    <!-- <script src="script.js" defer></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fff">
-      <div class="container">
-        <a class="navbar-brand" href="#">Amala Nanda</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="content">
-          <div class="hero-main">
-            <div class="hero-text">
-              <h1>Front-End Web Developer</h1>
-              <img src="waving.png" alt="waving_hand" />
-              <p>"Hi, I'm Amala Nanda Ikhlasulkhaq. A passionate Front-end Web Developer based in South Tangerang, Indonesia. 📍"</p>
-              <span>
-                <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/amala-nanda-ikhlasulkhaq-36b863268/"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="tabler-icon tabler-icon-brand-linkedin"
-                  >
-                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                    <path d="M8 11l0 5"></path>
-                    <path d="M8 8l0 .01"></path>
-                    <path d="M12 16l0 -5"></path>
-                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-                  </svg>
-                </a>
-                <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/amalananda"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="tabler-icon tabler-icon-brand-github"
-                  >
-                    <path
-                      d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                    ></path>
-                  </svg>
-                </a>
-              </span>
-            </div>
-            <div class="hero-img"></div>
-          </div>
-          <div class="skills">
-            <p>Tech Stack</p>
-            <div class="logos">
-              <ul>
-                <li>
-                  <img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon" />
-                </li>
-                <li>
-                  <img src="https://skillicons.dev/icons?i=javascript,git" alt="skill-icon" />
-                </li>
-                <li>
-                  <img src="https://skillicons.dev/icons?i=react,vue" alt="skill-icon" />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="img-side">
-            <img src="sidemain.jpeg" alt="mee" class="img-side_main-img" />
-          </div>
-          <div class="text-side">
-            <h3>About Me</h3>
-            <h4>
-              Front-End Developer
-              <br />
-              based in South Tangerang, Indonesia. 📍
-            </h4>
-            <p>
-              "Hey, My name is Amala Nanda Ikhlasulkhaq, and i'm Frontend Web Developer. My passion is to create and develop a clean UI/UX for my users."
-              <br />
-              <br />
-              "My main stack currently is React/Vue.js in combination with css."
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="project">
-      <div class="slider-container">
-        <div class="image-container">
-          <img class="image-item" src="login_page.jpg" alt="..." />
-          <img class="image-item" src="mole.jpg" alt="..." />
-          <img class="image-item" src="footer.jpg" alt="..." />
-          <img class="image-item" src="confirm_payment.jpg" alt="..." />
-          <img class="image-item" src="waiting_payment.jpg" alt="..." />
-          <img class="image-item" src="men_catalogue_vue.jpg" alt="..." />
-          <img class="image-item" src="uncategorized_vue.jpg" alt="..." />
-          <img class="image-item" src="women_catalogue_vue.jpg" alt="..." />
-          <img class="image-item" src="login_page.jpg" alt="" />
-          <img class="image-item" src="mole.jpg" alt="" />
-          <img class="image-item" src="footer.jpg" alt="" />
-          <img class="image-item" src="confirm_payment.jpg" alt="" />
-          <img class="image-item" src="waiting_payment.jpg" alt="" />
-          <img class="image-item" src="men_catalogue_vue.jpg" alt="" />
-          <img class="image-item" src="uncategorized_vue.jpg" alt="" />
-          <img class="image-item" src="women_catalogue_vue.jpg" alt="" />
-        </div>
-        <!-- <button id="prev">PREV</button>
-        <button id="next">NEXT</button> -->
-      </div>
-    </section>
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="contact_content">
-          <div class="contact_title">
-            <p>contact</p>
-            <h3>Don't be shy! Hit me up! 👇</h3>
-          </div>
-          <div class="contact_icons">
-            <div class="contact_icon-box">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-map-search">
-                  <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path>
-                  <path d="M9 4v13"></path>
-                  <path d="M15 7v5"></path>
-                  <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                  <path d="M20.2 20.2l1.8 1.8"></path>
-                </svg>
-              </span>
-              <div class="contact_info">
-                <h3>Location</h3>
-                <p>South Tangerang, Indonesia</p>
-              </div>
-            </div>
-            <div class="contact_icon-box">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mail">
-                  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
-                  <path d="M3 7l9 6l9 -6"></path>
-                </svg>
-              </span>
-              <div class="contact_info">
-                <h3>Mail</h3>
-                <a href="mailto:amalananda352@gmail.com">amalananda352@gmail.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="footers">
-          <h3>Copyright © 2024. All rights are reserved</h3>
-          <div class="footers_socials">
-            <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/amala-nanda-ikhlasulkhaq-36b863268/"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="tabler-icon tabler-icon-brand-linkedin"
-              >
-                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                <path d="M8 11l0 5"></path>
-                <path d="M8 8l0 .01"></path>
-                <path d="M12 16l0 -5"></path>
-                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-              </svg>
-            </a>
-            <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/amalananda"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="tabler-icon tabler-icon-brand-github"
-              >
-                <path
-                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./porticon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /> -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
+		<link href="/style.css" rel="stylesheet" />
+		<!-- <script src="script.js" defer></script> -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-expand-lg navbar-light shadow-sm"
+			style="background-color: #fff"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="#">Amala Nanda</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#home"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section id="home" class="hero">
+			<div class="container">
+				<div class="content">
+					<div class="hero-main">
+						<div class="hero-text">
+							<h1>FullStack Developer</h1>
+							<img src="waving.png" alt="waving_hand" />
+							<p>
+								"Hi, I'm Amala Nanda Ikhlasulkhaq. A passionate FullStack
+								Developer based in South Tangerang, Indonesia. 📍"
+							</p>
+							<span>
+								<a
+									aria-label="linkedin"
+									rel="noreferrer"
+									target="_blank"
+									href="https://www.linkedin.com/in/amala-nanda-ikhlasulkhaq-36b863268/"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="32"
+										height="32"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="tabler-icon tabler-icon-brand-linkedin"
+									>
+										<path
+											d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+										></path>
+										<path d="M8 11l0 5"></path>
+										<path d="M8 8l0 .01"></path>
+										<path d="M12 16l0 -5"></path>
+										<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+									</svg>
+								</a>
+								<a
+									aria-label="github"
+									rel="noreferrer"
+									target="_blank"
+									href="https://github.com/amalananda"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="32"
+										height="32"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="tabler-icon tabler-icon-brand-github"
+									>
+										<path
+											d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+										></path>
+									</svg>
+								</a>
+							</span>
+						</div>
+						<div class="hero-img"></div>
+					</div>
+					<div class="skills">
+						<p>Tech Stack</p>
+						<div class="logos">
+							<ul>
+								<li>
+									<img
+										src="https://skillicons.dev/icons?i=javascript,ts"
+										alt="skill-icon"
+									/>
+								</li>
+								<li>
+									<img
+										src="https://skillicons.dev/icons?i=nodejs,expressjs"
+										alt="skill-icon"
+									/>
+								</li>
+								<li>
+									<img
+										src="https://skillicons.dev/icons?i=mongodb,postgresql"
+										alt="skill-icon"
+									/>
+								</li>
+								<li>
+									<img
+										src="https://skillicons.dev/icons?i=tailwind,bootstrap"
+										alt="skill-icon"
+									/>
+								</li>
+								<li>
+									<img
+										src="https://skillicons.dev/icons?i=react,nextjs"
+										alt="skill-icon"
+									/>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about-content">
+					<div class="img-side">
+						<img src="sidemain.jpeg" alt="mee" class="img-side_main-img" />
+					</div>
+					<div class="text-side">
+						<h3>About Me</h3>
+						<h4>
+							FullStack Developer
+							<br />
+							based in South Tangerang, Indonesia. 📍
+						</h4>
+						<p>
+							"Hey, My name is Amala Nanda Ikhlasulkhaq. I am passionate about
+							IT, especially software development, and am dedicated to enhancing
+							my skills. At Hacktiv8, I focus on continuous learning and staying
+							updated with industry trends to deliver innovative solutions. I
+							apply engineering principles to ensure high-quality, scalable, and
+							maintainable code."
+							<br />
+							<!-- <br />
+							"My main stack currently is React/Vue/Next.js in combination with
+							css." -->
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="project py-20">
+			<div class="container">
+				<h2 class="text-center mb-4">Projects</h2>
+				<div class="row">
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card">
+							<a href="https://zalorant.vercel.app/" target="_blank">
+								<img src="zalorant.png" class="card-img-top" alt="Project 1" />
+							</a>
+							<div class="card-body">
+								<h5 class="card-title">Zalorant</h5>
+								<p class="card-text">
+									A simple web-based e-commerce platform similar to Zalora.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card">
+							<a href="https://p2-iproject-1.web.app/" target="_blank">
+								<img src="trip.png" class="card-img-top" alt="Project 2" />
+							</a>
+							<div class="card-body">
+								<h5 class="card-title">Healing Ga Sihh?</h5>
+								<p class="card-text">
+									A simple web based designed to help users explore the beauty
+									of Central Java.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card">
+							<a href="https://paceful-8ab67.web.app/" target="_blank">
+								<img src="paceful.png" class="card-img-top" alt="Project 2" />
+							</a>
+							<div class="card-body">
+								<h5 class="card-title">Paceful</h5>
+								<p class="card-text">
+									Dynamic fitness tracker app designed to help users achieve
+									their wellness goals with ease and motivation.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="contact_content">
+					<div class="contact_title">
+						<p>contact</p>
+						<h3>Don't be shy! Hit me up! 👇</h3>
+					</div>
+					<div class="contact_icons">
+						<div class="contact_icon-box">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="30"
+									height="30"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="tabler-icon tabler-icon-map-search"
+								>
+									<path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path>
+									<path d="M9 4v13"></path>
+									<path d="M15 7v5"></path>
+									<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+									<path d="M20.2 20.2l1.8 1.8"></path>
+								</svg>
+							</span>
+							<div class="contact_info">
+								<h3>Location</h3>
+								<p>South Tangerang, Indonesia</p>
+							</div>
+						</div>
+						<div class="contact_icon-box">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="30"
+									height="30"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="tabler-icon tabler-icon-mail"
+								>
+									<path
+										d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+									></path>
+									<path d="M3 7l9 6l9 -6"></path>
+								</svg>
+							</span>
+							<div class="contact_info">
+								<h3>Mail</h3>
+								<a href="mailto:amalananda352@gmail.com"
+									>amalananda352@gmail.com</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="footers">
+					<h3>Copyright © 2025. All rights are reserved</h3>
+					<div class="footers_socials">
+						<a
+							aria-label="linkedin"
+							target="_blank"
+							rel="noreferrer"
+							href="https://www.linkedin.com/in/amala-nanda-ikhlasulkhaq-36b863268/"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="30"
+								height="30"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="tabler-icon tabler-icon-brand-linkedin"
+							>
+								<path
+									d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+								></path>
+								<path d="M8 11l0 5"></path>
+								<path d="M8 8l0 .01"></path>
+								<path d="M12 16l0 -5"></path>
+								<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+							</svg>
+						</a>
+						<a
+							aria-label="github"
+							target="_blank"
+							rel="noreferrer"
+							href="https://github.com/amalananda"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="30"
+								height="30"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="tabler-icon tabler-icon-brand-github"
+							>
+								<path
+									d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+								></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

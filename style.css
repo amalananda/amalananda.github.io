@@ -52,7 +52,7 @@ div {
   font-size: 1.7rem;
   height: auto;
   justify-content: space-between;
-  left: 0;
+  left: 10px;
   padding: 25px 40px 25px 40px;
   position: fixed;
   width: 100%;
@@ -79,7 +79,7 @@ li {
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   width: 100%;
 }
@@ -88,6 +88,16 @@ li {
   .hero {
     height: auto;
     padding: 11rem 0;
+  }
+  .content {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+  }
+  .about-content {
+           grid-template-columns: 1fr;
+           text-align: center;
   }
 }
 
@@ -452,8 +462,36 @@ h4 {
 .project {
   background-color: #f9f9f9;
   padding: 5rem 0;
+  height: 70vh;
+  /* margin-top: 50vh; */
+}
+.card {
+    border: none; /* Menghapus border default */
+    transition: transform 0.3s ease; /* Transisi halus untuk efek hover */
+    width: 100%; /* Pastikan card mengambil lebar penuh dari container */
+    margin-top: 50px;
 }
 
+.card-body {
+    max-height: 100px; /* Atur tinggi maksimum sesuai kebutuhan */
+    overflow: hidden; /* Sembunyikan teks yang melebihi batas */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.card-img-top {
+    height: 300px; /* Atur tinggi gambar */
+    object-fit: contain; /* Memastikan gambar tidak terdistorsi */
+    width: 100%;
+}
+.card-text {
+    line-height: 1.5;
+    margin: 0;
+    word-wrap: break-word; /* Tambahkan titik elipsis untuk teks yang terpotong */
+    overflow-wrap: break-word
+}
 /* @media (max-width: 1020px) {
   .project {
     padding: 8rem 0;
@@ -513,11 +551,14 @@ h4 {
 } */
 
 .image-item {
-  width: 100%; /* Pastikan gambar mengambil lebar penuh dari container */
-  flex-shrink: 0; /* Mencegah gambar menyusut lebih kecil dari container */
-  height: auto;
-  border: none;
-  padding: 0;
+       width: 100%; /* Pastikan gambar mengambil lebar penuh dari container */
+       height: auto; /* Biarkan tinggi otomatis */
+       border: none;
+       padding: 0;
+       transition: transform 0.3s ease-in-out; /* Transisi halus */
+}
+.image-item:hover {
+       transform: scale(1.1); /* Efek zoom saat hover */
 }
 
 .slider-container button {
