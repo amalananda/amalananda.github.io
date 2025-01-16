@@ -52,11 +52,20 @@ div {
   font-size: 1.7rem;
   height: auto;
   justify-content: space-between;
-  left: 10px;
+  left: 0;
   padding: 25px 40px 25px 40px;
   position: fixed;
   width: 100%;
   z-index: 200;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Rata tengah pada tampilan mobile */
+    }
+    .navbar-nav .nav-link {
+        margin: 10px 0; /* Jarak antar link pada tampilan mobile */
+    }
 }
 
 img {
@@ -462,7 +471,7 @@ h4 {
 .project {
   background-color: #f9f9f9;
   padding: 5rem 0;
-  height: 70vh;
+  /* height: 70vh; */
   /* margin-top: 50vh; */
 }
 .card {
@@ -491,6 +500,15 @@ h4 {
     margin: 0;
     word-wrap: break-word; /* Tambahkan titik elipsis untuk teks yang terpotong */
     overflow-wrap: break-word
+}
+@media (max-width: 768px) {
+    .project {
+        padding: 3rem 0; /* Mengurangi padding pada tampilan mobile */
+    }
+
+    .card {
+        margin-bottom: 2rem; /* Jarak antar kartu pada tampilan mobile */
+    }
 }
 /* @media (max-width: 1020px) {
   .project {
