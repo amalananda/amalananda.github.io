@@ -498,7 +498,7 @@ h4 {
 .card-text {
     line-height: 1.5;
     margin: 0;
-    word-wrap: break-word; /* Tambahkan titik elipsis untuk teks yang terpotong */
+    word-wrap: break-word;
     overflow-wrap: break-word
 }
 @media (max-width: 768px) {
